@@ -1,0 +1,547 @@
+/*lw 3ndk sora 3leha klam yb2a de ma7tota bl css*/
+
+
+/* over all */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body
+{
+font-family: 'Varela Round', sans-serif;  
+}
+
+
+.clearfix
+{
+    clear:both
+}
+
+
+.container
+{
+    width:80%;
+    margin:auto;
+    position: relative
+}
+/* overall */
+
+
+/* LOGO */
+
+.header
+{
+    width:100%;
+    position:absolute;  /*lel body kolo */
+    z-index: 1;
+}
+.header .logo
+{
+    width:40%;
+    float:left;
+    position: absolute
+}
+.header .logo img
+{
+    width:20%;
+
+}
+/*End logo */
+
+/* Start navbar */
+
+.header .nav
+{
+    width:60%;
+    float:right;
+}
+
+.header .nav ul
+{
+    list-style-type: none;
+    padding:10px;
+    
+}
+.header .nav ul li
+{
+    display:inline-block;
+    text-align: center;
+}
+.header .nav ul li a
+{
+    color:white;
+    text-decoration:none;
+    padding:30px 15px;
+    display:block;
+    font-size: 15px;
+
+}
+.header .nav ul li a.active
+{
+    border-bottom: 1px solid aquamarine;
+    padding:.2px;
+}
+
+
+.header .nav ul li a:after
+{
+    content:"";
+    width:0;
+    background-color:aquamarine;
+    height:2px;
+    display:block;
+    transition:.5s
+  
+}
+.header .nav ul li a:hover:after
+{
+    width:100%
+}
+
+/* End Navbar */
+
+/* Start background */
+
+.background
+{
+    background-image: url("../background1.webp");
+    height:100vh;
+    background-position: cover;
+    position: relative;
+}
+.overlay
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.7)
+}
+.background .overlay .text
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    text-align:center
+/* background */
+        
+/* Start Background text */
+}
+.head
+{
+    color:white;
+    font-size: 3rem;
+    font-family: montesrrat, sans-serif;
+}
+.home-para
+{
+        color:white;
+        margin-top:10px;
+        padding: 5px;
+        line-height: 30px;
+        font-size: 20px;
+
+}
+.background .btn
+{
+    width:150px;
+    padding:10px 0;
+    border-radius: 5px;
+    border:0;
+    cursor:pointer;
+    font-size:18px;
+}
+.background .btn-first 
+{
+    margin-right: 10px;
+    background-color: white;
+    opacity: 
+    
+}
+
+
+.background .btn-sec
+{
+    background-color: #6195ff;
+    color:white
+}
+.background .btn:hover
+{
+    opacity: .8;
+    transition:.5s
+}
+/* back ground text */
+/*start text header */
+/* text-header */
+
+.text-header
+{
+    text-align: center;
+    margin:120px 0 50px 0;
+}
+
+.text-header .text-h1
+{
+    font-size:35px;
+}
+.text-header .text-span
+{
+    height:5px;
+    margin:10px auto 80px auto;
+    width:60px;
+    background-color:#6195ff;
+    display:block;
+    
+}
+
+
+.about-content
+{
+    padding:10px 0
+}
+
+.about-item
+{
+    width:30%;
+    float:left;
+    text-align: center;
+    border:1px solid #E8E8E8;
+    padding:50px 20px;
+    
+    margin-bottom: 200px;
+}
+.about-item.mg /* mat7otsh msafa mbnhoom */
+{
+    margin:0 5% 0 5%;
+}
+.about-item .icon
+{
+    color: #6195ff;
+    margin-bottom: 10px;
+}
+
+.about-item .about-h3
+{
+    margin-bottom: 15px;
+}
+
+.about-item .about-p
+{
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-item .about-btn
+{
+    color:#6159ff;
+    text-decoration: none;
+    
+}
+
+.ltr
+{
+    position:relative;
+}
+.ltr:after
+{
+    position:absolute;
+    content:"";
+    top:0;
+    right:0;
+    bottom:0;   /* ka2nk bt2olo width and hight 100% */
+    left:0;
+    width:0;
+    background:#999;
+    transition: .5s;
+    z-index: -1;
+}
+.ltr:hover:after
+{
+    width:100%;
+}
+
+.ltr:hover .about-h3 
+{
+    color:white;
+    transition: .5s;
+}
+
+.portofolio
+{
+    background-color: #f9f9f9;
+    width:100%;
+    text-align: center;
+    padding:;
+margin:0 0 40px 0;
+
+}
+.portofolio .porto-span
+{
+    height:5px;
+    margin:10px auto 70px auto;
+    width:60px;
+    background-color:#6195ff;
+    display:block;
+}
+.portofolio .porto-h2
+{
+        font-size:35px;
+
+
+}
+
+.portofolio-item
+{
+    width:32%;
+    float:left;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+.portofolio-item .layer-content
+{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: .5s;
+    
+}
+.portofolio-item .layer-content:hover
+{
+    opacity: 1;
+}
+
+
+
+.portofolio-item img
+{
+    width:80%;
+    margin: 30px;
+
+}
+
+.portofolio-item.mg
+{
+    margin:0 2% 0 2%;
+}
+.layer-content
+{
+    text-align: center;
+    padding:150px;
+    
+}
+.asd .layer-span
+{
+    color:#6195ff;
+    font-size: 20px;
+}
+
+.asd .layer-h3
+{
+    color:white;
+    display: inline;
+}
+
+.asd .fa-lg
+{
+    display: inline-block;
+    background-color: #6195ff;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    color: aliceblue
+}
+
+.offer
+{
+    
+}
+.offer-content
+{
+    
+}
+.offer-item
+{
+    width:30%;
+    float:left;
+    margin-bottom:20px ;
+    border:1px solid #E8E8E8;
+    padding:20px 15px 30px 70px;
+    position: relative;
+}
+.offer-item.bg
+{
+    margin:0 5% 0 5%;
+}
+.offer-item .offer-icon
+{
+    position: absolute;
+    top:20px;
+    left:15px;
+    color:#6195ff;
+}
+.offer-item-title
+{
+    margin-bottom: 15px;
+}
+.offer-item-p
+{
+    color:rgba(0,0,0,0.5)
+    line-height: 1.6
+}
+
+.rtl
+{
+    position: relative;
+}
+
+.rtl:after
+{
+    position:absolute;
+    content:"";
+    top:0;
+    right:0;
+    bottom:0;   /* ka2nk bt2olo width and hight 100% */
+    left:0;
+    width:0;
+    background:#999;
+    transition: .5s;
+    z-index: -1;
+
+}
+.rtl:hover
+{
+    width:100%
+}
+.service
+{
+    background-color:#f9f9f9;
+    margin:150px 0 40px 0;
+
+}
+
+.service .para
+{
+    width:50%;
+    float:left;
+}
+.service .slider
+{
+    width:50%;
+    float:left
+}
+.service .para .text-header
+{
+    text-align: left;
+    margin:50px 80px 10px 200px;
+}
+.text-header .text-span1
+
+{
+    height:5px;
+    margin:0 0 100px 110px;
+    width:60px;
+    background-color:#6195ff;
+    display:block;
+    
+}
+.para .saed
+{
+    margin:10px 20px 50px 70px;
+    color:dimgray;
+}
+.para .quiz
+{
+    margin:0 20px 50px 70px;
+    list-style-type: none;
+
+}
+.service .slider
+{
+    margin:50px 0 0 0;
+}
+.numbers
+{
+    position: relative;
+    background-image: url(../background2.webp);
+    height: 350px;
+    background-size: cover;
+    background-attachment:fixed;
+ 
+   
+}
+
+.overlay
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5)
+}
+.numbers-item
+{
+    position: absolute;
+    overflow:hidden;
+    
+}
+.number-items
+{
+    width:25%;
+    float:left;
+    text-align: center;
+    padding:120px 0;
+    
+}
+.icon
+{
+    padding-bottom: 10px;
+    color: white;
+}
+.no
+{
+    
+    font-size:30px;
+    color:white;
+}
+.number-para
+{
+    font-size:25px;
+    color:white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
